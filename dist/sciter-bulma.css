@@ -3230,7 +3230,7 @@ a.tag:hover {
   padding: 1em 3em;
   flow: vertical;
   content-horizontal-align: center;
-  width: "*";
+  width: *;
 }
 .file.is-boxed .file-name {
   border-width: 0 1px 1px;
@@ -3267,7 +3267,7 @@ a.tag:hover {
 .file.is-fullwidth .file-name {
   flex-grow: 1;
   max-width: none;
-  width: "1*";
+  width: *;
 }
 .file.is-right {
   content-horizontal-align: right;
@@ -3468,7 +3468,7 @@ a.tag:hover {
 .field.has-addons .control.is-expanded {
   flex-grow: 1;
   flex-shrink: 1;
-  width: "1*";
+  width: *;
 }
 .field.has-addons.has-addons-centered {
   content-horizontal-align: center;
@@ -3479,7 +3479,7 @@ a.tag:hover {
 .field.has-addons.has-addons-fullwidth .control {
   flex-grow: 1;
   flex-shrink: 0;
-  width: "1*";
+  width: *;
 }
 .field.is-grouped {
   flow: horizontal;
@@ -3495,7 +3495,7 @@ a.tag:hover {
 .field.is-grouped > .control.is-expanded {
   flex-grow: 1;
   flex-shrink: 1;
-  width: "1*";
+  width: *;
 }
 .field.is-grouped.is-grouped-centered {
   content-horizontal-align: center;
@@ -3534,7 +3534,7 @@ a.tag:hover {
     flex-basis: 0;
     flex-grow: 1;
     flex-shrink: 0;
-    width: "1*";
+    width: *;
     margin-right: 1.5rem;
     text-align: right;
   }
@@ -3564,18 +3564,18 @@ a.tag:hover {
     flex-basis: 0;
     flex-grow: 5;
     flex-shrink: 1;
-    width: "5*";
+    width: 5*;
   }
   .field-body .field {
     margin-bottom: 0;
   }
   .field-body > .field {
     flex-shrink: 1;
-    width: "*";
+    width: *;
   }
   .field-body > .field:not(.is-narrow) {
     flex-grow: 1;
-    width: "1*";
+    width: *;
   }
   .field-body > .field:not(:last-child) {
     margin-right: 0.75rem;
@@ -3744,7 +3744,7 @@ a.tag:hover {
   flow: horizontal;
 }
 .card-header > * {
-  height: "*";
+  height: *;
 }
 
 .card-header-title {
@@ -3754,7 +3754,7 @@ a.tag:hover {
   padding: 0.75rem 1rem;
   flow: horizontal;
   content-vertical-align: middle;
-  width: "1*";
+  width: *;
 }
 .card-header-title.is-centered {
   content-horizontal-align: center;
@@ -3800,14 +3800,14 @@ a.tag:hover {
   flow: horizontal;
 }
 .card-footer > * {
-  height: "*";
+  height: *;
 }
 
 .card-footer-item {
   flow: horizontal;
   content-horizontal-align: center;
   content-vertical-align: middle;
-  width: "1*";
+  width: *;
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 0;
@@ -3876,7 +3876,7 @@ button.dropdown-item {
   padding-right: 3rem;
   text-align: inherit;
   white-space: nowrap;
-  width: "*";
+  width: *;
 }
 a.dropdown-item:hover,
 button.dropdown-item:hover {
@@ -3898,7 +3898,7 @@ button.dropdown-item.is-active {
 }
 
 .level {
-  border-spacing: "*";
+  border-spacing: *;
   content-vertical-align: middle;
 }
 .level code {
@@ -3924,7 +3924,7 @@ button.dropdown-item.is-active {
 }
 .level.is-mobile .level-item:not(.is-narrow) {
   flex-grow: 1;
-  width: "1*";
+  width: *;
 }
 @media screen and (width >= 769px), print {
   .level {
@@ -3932,7 +3932,7 @@ button.dropdown-item.is-active {
   }
   .level > .level-item:not(.is-narrow) {
     flex-grow: 1;
-    width: "1*";
+    width: *;
   }
 }
 
@@ -3963,7 +3963,7 @@ button.dropdown-item.is-active {
 .level-left .level-item.is-flexible,
 .level-right .level-item.is-flexible {
   flex-grow: 1;
-  width: "1*";
+  width: *;
 }
 @media screen and (width >= 769px), print {
   .level-left .level-item:not(:last-child),
@@ -4050,7 +4050,7 @@ button.dropdown-item.is-active {
   flex-grow: 1;
   flex-shrink: 1;
   text-align: inherit;
-  width: "1*";
+  width: *;
 }
 
 @media screen and (width <= 768px) {
@@ -4243,7 +4243,7 @@ button.dropdown-item.is-active {
   line-height: 1.25;
   padding: 0.75em 1em;
   flow: horizontal;
-  border-spacing: "*";
+  border-spacing: *;
   content-vertical-align: middle;
 }
 .message-header .delete {
@@ -4343,7 +4343,7 @@ button.dropdown-item.is-active {
   color: hsl(0, 0%, 21%);
   flex-grow: 1;
   flex-shrink: 0;
-  width: "1*";
+  width: *;
   font-size: 1.5rem;
   line-height: 1;
 }
@@ -4361,7 +4361,7 @@ button.dropdown-item.is-active {
   background-color: hsl(0, 0%, 100%);
   flex-grow: 1;
   flex-shrink: 1;
-  width: "1*";
+  width: *;
   max-height: calc(100vh - 80px - 40px - 5em);
   overflow: auto;
   padding: 20px;
@@ -4939,7 +4939,7 @@ button.dropdown-item.is-active {
   width: 100%;
 }
 .navbar > .container > * {
-  height: "*";
+  height: *;
 }
 .navbar.has-shadow {
   box-shadow: 0 2px 0 0 hsl(0, 0%, 96%);
@@ -4977,7 +4977,7 @@ body.has-navbar-fixed-bottom {
 }
 .navbar-brand > *,
 .navbar-tabs > * {
-  height: "*";
+  height: *;
 }
 
 .navbar-brand a.navbar-item:focus, .navbar-brand a.navbar-item:hover {
@@ -5079,7 +5079,7 @@ a.navbar-item:focus, a.navbar-item:hover, a.navbar-item.is-active,
 .navbar-item.is-expanded {
   flex-grow: 1;
   flex-shrink: 1;
-  width: "1*";
+  width: *;
 }
 .navbar-item.is-tab {
   border-bottom: 1px solid transparent;
@@ -5102,7 +5102,7 @@ a.navbar-item:focus, a.navbar-item:hover, a.navbar-item.is-active,
 .navbar-content {
   flex-grow: 1;
   flex-shrink: 1;
-  width: "1*";
+  width: *;
 }
 
 .navbar-link:not(.is-arrowless) {
@@ -5192,7 +5192,7 @@ a.navbar-item:focus, a.navbar-item:hover, a.navbar-item.is-active,
   .navbar-menu > *,
   .navbar-start > *,
   .navbar-end > * {
-    height: "*";
+    height: *;
   }
   .navbar {
     min-height: 3.25rem;
@@ -5256,7 +5256,7 @@ a.navbar-item:focus, a.navbar-item:hover, a.navbar-item.is-active,
     transform: translateY(0);
   }
   .navbar-menu {
-    width: "1*";
+    width: *;
     flex-grow: 1;
     flex-shrink: 0;
   }
@@ -5487,19 +5487,19 @@ a.navbar-item:focus, a.navbar-item:hover, a.navbar-item.is-active,
   .pagination-next {
     flex-grow: 1;
     flex-shrink: 1;
-    width: "1*";
+    width: *;
   }
   .pagination-list li {
     flex-grow: 1;
     flex-shrink: 1;
-    width: "1*";
+    width: *;
   }
 }
 @media screen and (width >= 769px), print {
   .pagination-list {
     flex-grow: 1;
     flex-shrink: 1;
-    width: "1*";
+    width: *;
     content-horizontal-align: left;
     order: 1;
   }
@@ -5706,7 +5706,7 @@ a.navbar-item:focus, a.navbar-item:hover, a.navbar-item.is-active,
   flow: horizontal;
   content-horizontal-align: center;
   content-vertical-align: middle;
-  width: "1*";
+  width: *;
 }
 .panel-block.is-wrapped {
   flex-wrap: wrap;
@@ -5756,10 +5756,10 @@ label.panel-block:hover {
   overflow-x: auto;
   white-space: nowrap;
   flow: horizontal;
-  border-spacing: "*";
+  border-spacing: *;
 }
 .tabs > * {
-  height: "*";
+  height: *;
 }
 .tabs a {
   border-bottom-color: hsl(0, 0%, 86%);
@@ -5791,7 +5791,7 @@ label.panel-block:hover {
   border-bottom-width: 1px;
   flex-grow: 1;
   flex-shrink: 0;
-  width: "1*";
+  width: *;
   flow: horizontal;
   content-horizontal-align: left;
   content-vertical-align: middle;
@@ -5836,7 +5836,7 @@ label.panel-block:hover {
 .tabs.is-fullwidth li {
   flex-grow: 1;
   flex-shrink: 0;
-  width: "1*";
+  width: *;
 }
 .tabs.is-toggle a {
   border-color: hsl(0, 0%, 86%);
@@ -5896,7 +5896,7 @@ label.panel-block:hover {
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
-  width: "1*";
+  width: *;
   padding: 0.75rem;
 }
 .columns.is-mobile > .column.is-narrow {
@@ -7375,10 +7375,10 @@ label.panel-block:hover {
   flex-grow: 1;
   flex-shrink: 1;
   min-height: min-content;
-  width: "1*";
+  width: *;
 }
 .tile:not(.is-child) > * {
-  height: "*";
+  height: *;
 }
 .tile.is-ancestor {
   margin-left: -0.75rem;
@@ -9084,10 +9084,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 /* Bulma Layout */
 .hero {
   flow: vertical;
-  border-spacing: "*";
+  border-spacing: *;
 }
 .hero > * {
-  height: "*";
+  height: *;
 }
 .hero .navbar {
   background: none;
@@ -9745,7 +9745,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .hero.is-halfheight .hero-body > .container, .hero.is-fullheight .hero-body > .container, .hero.is-fullheight-with-navbar .hero-body > .container {
   flex-grow: 1;
   flex-shrink: 1;
-  width: "1*";
+  width: *;
 }
 .hero.is-halfheight {
   min-height: 50vh;
@@ -9804,7 +9804,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .hero-body {
   flex-grow: 1;
   flex-shrink: 0;
-  width: "1*";
+  width: *;
   padding: 3rem 1.5rem;
 }
 @media screen and (width >= 769px), print {
