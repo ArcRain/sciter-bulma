@@ -1,0 +1,82 @@
+@import "../utilities/mixins"
+
+$level-item-spacing: ($block-spacing * 0.5) !default
+
+.level
+  @extend %block
+  +flow-justify-content("space-between")
+  +flow-align-items("center")
+  code
+    border-radius: $radius
+  img
+    display: inline-block
+    vertical-align: top
+  // Modifiers
+  &.is-mobile
+    +flow(horizontal)
+    .level-left,
+    .level-right
+      +flow(horizontal)
+    .level-left + .level-right
+      margin-top: 0
+    .level-item
+      &:not(:last-child)
+        margin-bottom: 0
+        +ltr-property("margin", $level-item-spacing)
+      &:not(.is-narrow)
+        flex-grow: 1
+        +flow-flex-grow(1)
+  // Responsiveness
+  +tablet
+    +flow(horizontal)
+    & > .level-item
+      &:not(.is-narrow)
+        flex-grow: 1
+        +flow-flex-grow(1)
+
+.level-item
+  flex-basis: auto
+  flex-grow: 0
+  flex-shrink: 0
+  +flow(horizontal)
+  +flow-justify-content("center")
+  +flow-align-items("center")
+  .title,
+  .subtitle
+    margin-bottom: 0
+  // Responsiveness
+  +mobile
+    &:not(:last-child)
+      margin-bottom: $level-item-spacing
+
+.level-left,
+.level-right
+  flex-basis: auto
+  flex-grow: 0
+  flex-shrink: 0
+  .level-item
+    // Modifiers
+    &.is-flexible
+      flex-grow: 1
+      +flow-flex-grow(1)
+    // Responsiveness
+    +tablet
+      &:not(:last-child)
+        +ltr-property("margin", $level-item-spacing)
+
+.level-left
+  +flow-justify-content("flex-start")
+  +flow-align-items("center")
+  // Responsiveness
+  +mobile
+    & + .level-right
+      margin-top: 1.5rem
+  +tablet
+    +flow(horizontal)
+
+.level-right
+  +flow-justify-content("flex-end")
+  +flow-align-items("center")
+  // Responsiveness
+  +tablet
+    +flow(horizontal)

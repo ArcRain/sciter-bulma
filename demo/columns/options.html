@@ -1,0 +1,134 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../dist/sciter-bulma.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 32px;
+    }
+
+    .column {
+      border: 1px solid #f00;
+      background-color: #fa0;
+      color: #fff;
+    }
+
+    .bd-notification {
+      background-color: #f5f5f5;
+      border-radius: 0.375em;
+      color: #7a7a7a;
+      font-weight: 600;
+      padding: 1.25rem 0;
+      position: relative;
+      text-align: center;
+    }
+
+    .bd-notification.is-primary {
+      background-color: #00d1b2;
+      color: #fff;
+    }
+
+    .bd-notification.is-info {
+      background-color: #3e8ed0;
+      color: #fff;
+    }
+
+    .bd-notification.is-danger {
+      background-color: #f14668;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block" id="Vertical-Alignment">
+    <div class="columns is-vcentered">
+      <div class="column is-8">
+        <p class="bd-notification is-primary">First column</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">
+          Second column with more content. This is so you can see the vertical
+          alignment.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="block" id="Multiline">
+    <div class="columns is-multiline is-mobile">
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary"><code>is-one-quarter</code></p>
+      </div>
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary"><code>is-one-quarter</code></p>
+      </div>
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary"><code>is-one-quarter</code></p>
+      </div>
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary"><code>is-one-quarter</code></p>
+      </div>
+      <div class="column is-half">
+        <p class="bd-notification is-primary"><code>is-half</code></p>
+      </div>
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary"><code>is-one-quarter</code></p>
+      </div>
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary"><code>is-one-quarter</code></p>
+      </div>
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary"><code>is-one-quarter</code></p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary"><code>Auto</code></p>
+      </div>
+    </div>
+  </div>
+  <div class="block" id="Centering-Columns">
+    <div class="columns is-mobile is-centered">
+      <div class="column is-half">
+        <p class="bd-notification is-primary">
+          <code class="html">is-half</code>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="block" id="Multi-Columns">
+    <div class="columns is-mobile is-multiline is-centered">
+      <div class="column is-narrow">
+        <p class="bd-notification is-primary">
+          <code class="html">is-narrow</code><br />
+          First Column
+        </p>
+      </div>
+      <div class="column is-narrow">
+        <p class="bd-notification is-primary">
+          <code class="html">is-narrow</code><br />
+          Our Second Column
+        </p>
+      </div>
+      <div class="column is-narrow">
+        <p class="bd-notification is-primary">
+          <code class="html">is-narrow</code><br />
+          Third Column
+        </p>
+      </div>
+      <div class="column is-narrow">
+        <p class="bd-notification is-primary">
+          <code class="html">is-narrow</code><br />
+          The Fourth Column
+        </p>
+      </div>
+      <div class="column is-narrow">
+        <p class="bd-notification is-primary">
+          <code class="html">is-narrow</code><br />
+          Fifth Column
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

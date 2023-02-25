@@ -1,0 +1,93 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../dist/sciter-bulma.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 32px;
+    }
+
+    .column {
+      border: 1px solid #f00;
+      background-color: #fa0;
+      color: #fff;
+    }
+
+    .bd-notification {
+      background-color: #f5f5f5;
+      border-radius: 0.375em;
+      color: #7a7a7a;
+      font-weight: 600;
+      padding: 1.25rem 0;
+      position: relative;
+      text-align: center;
+    }
+
+    .bd-notification.is-primary {
+      background-color: #00d1b2;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block" id="Mobile-Column">
+    <div class="columns is-mobile">
+      <div class="column">
+        <p class="bd-notification is-primary">1</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">2</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">3</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">4</p>
+      </div>
+    </div>
+    <div class="columns is-desktop">
+      <div class="column">
+        <p class="bd-notification is-primary">1</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">2</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">3</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">4</p>
+      </div>
+    </div>
+  </div>
+  <div class="block" id="DifferentColumnSizesPerBreakpoint">
+    <div class="columns is-mobile">
+      <div
+        class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop is-one-third-widescreen is-one-quarter-fullhd">
+        <p class="bd-notification is-primary">
+          <code>is-three-quarters-mobile</code><br />
+          <code>is-two-thirds-tablet</code><br />
+          <code>is-half-desktop</code><br />
+          <code>is-one-third-widescreen</code><br />
+          <code>is-one-quarter-fullhd</code>
+        </p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">2</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">3</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">4</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">5</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

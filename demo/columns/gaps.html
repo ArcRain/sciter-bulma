@@ -1,0 +1,126 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../dist/sciter-bulma.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 32px;
+    }
+
+    .column {
+      border: 1px solid #f00;
+      background-color: #fa0;
+      color: #fff;
+    }
+
+    .bd-notification {
+      background-color: #f5f5f5;
+      border-radius: 0.375em;
+      color: #7a7a7a;
+      font-weight: 600;
+      padding: 1.25rem 0;
+      position: relative;
+      text-align: center;
+    }
+
+    .bd-notification.is-primary {
+      background-color: #00d1b2;
+      color: #fff;
+    }
+
+    .block {
+      margin: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block" id="Default">
+    <div class="columns">
+      <div class="column">
+        <p class="bd-notification is-primary">gap</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">gap</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">gap</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">gap</p>
+      </div>
+    </div>
+  </div>
+  <div class="block" id="Gapless">
+    <div class="columns is-gapless">
+      <div class="column">
+        <p class="bd-notification is-primary">No gap</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">No gap</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">No gap</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">No gap</p>
+      </div>
+    </div>
+  </div>
+  <div class="block" id="multiline">
+    <div class="columns is-gapless is-multiline is-mobile">
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary">is-one-quarter</p>
+      </div>
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary">is-one-quarter</p>
+      </div>
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary">is-one-quarter</p>
+      </div>
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary">is-one-quarter</p>
+      </div>
+      <div class="column is-half">
+        <p class="bd-notification is-primary">is-half</p>
+      </div>
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary">is-one-quarter</p>
+      </div>
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary">is-one-quarter</p>
+      </div>
+      <div class="column is-one-quarter">
+        <p class="bd-notification is-primary">is-one-quarter</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">Auto</p>
+      </div>
+    </div>
+  </div>
+  <div class="block" id="BreakpointBasedColumnGaps">
+    <div class="columns is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
+      <div class="column">
+        <p class="bd-notification is-primary">Column</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">Column</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">Column</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">Column</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">Column</p>
+      </div>
+      <div class="column">
+        <p class="bd-notification is-primary">Column</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

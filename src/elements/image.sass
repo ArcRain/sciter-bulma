@@ -1,0 +1,82 @@
+@import "../utilities/mixins"
+
+$dimensions: 16 24 32 48 64 96 128 256 !default
+
+.image
+  display: block
+  img
+    display: block
+    height: auto
+    width: 100%
+    &.is-rounded
+      border-radius: $radius-rounded
+  &.is-fullwidth
+    width: 100%
+  // Ratio
+  &.is-square,
+  &.is-1by1
+    height: width(100%)
+    img
+      height: width(100%)
+  &.is-5by4
+    height: width(80%)
+    img
+      height: width(80%)
+  &.is-4by3
+    height: width(75%)
+    img
+      height: width(75%)
+  &.is-3by2
+    height: width(66.6666%)
+    img
+      height: width(66.6666%)
+  &.is-5by3
+    height: width(60%)
+    img
+      height: width(60%)
+  &.is-16by9
+    height: width(56.25%)
+    img
+      height: width(56.25%)
+  &.is-2by1
+    height: width(50%)
+    img
+      height: width(50%)
+  &.is-3by1
+    height: width(33.3333%)
+    img
+      height: width(33.3333%)
+  &.is-4by5
+    height: width(125%)
+    img
+      height: width(125%)
+  &.is-3by4
+    height: width(133.3333%)
+    img
+      height: width(133.3333%)
+  &.is-2by3
+    height: width(150%)
+    img
+      height: width(150%)
+  &.is-3by5
+    height: width(166.6666%)
+    img
+      height: width(166.6666%)
+  &.is-9by16
+    height: width(177.7777%)
+    img
+      height: width(177.7777%)
+  &.is-1by2
+    height: width(200%)
+    img
+      height: width(200%)
+  &.is-1by3
+    height: width(300%)
+    img
+      height: width(300%)
+
+  // Sizes
+  @each $dimension in $dimensions
+    &.is-#{$dimension}x#{$dimension}
+      height: $dimension * 1px
+      width: $dimension * 1px

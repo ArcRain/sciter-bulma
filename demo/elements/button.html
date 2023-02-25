@@ -1,0 +1,297 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="../../vendors/sciter-fontawesome/fontawesome.css" />
+  <link rel="stylesheet" href="../../dist/sciter-bulma.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 32px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block" id="Buttons">
+    <button class="button">Button</button>
+    <a class="button">Anchor</a>
+    <button class="button is-medium">Button</button>
+    <button class="button is-large">Button</button>
+    <input class="button" type="submit" value="Submit input" />
+    <input class="button" type="reset" value="Reset input" />
+  </div>
+  <div class="block" id="Color-Buttons">
+    <button class="button is-white">White</button>
+    <button class="button is-light">Light</button>
+    <button class="button is-dark">Dark</button>
+    <button class="button is-black">Black</button>
+    <button class="button is-text">Text</button>
+    <button class="button is-ghost">Ghost</button>
+  </div>
+  <div class="block">
+    <div class="buttons">
+      <button class="button is-primary">Primary</button>
+      <button class="button is-link">Link</button>
+    </div>
+    <div class="buttons">
+      <button class="button is-info">Info</button>
+      <button class="button is-success">Success</button>
+      <button class="button is-warning">Warning</button>
+      <button class="button is-danger">Danger</button>
+    </div>
+    <div class="buttons">
+      <button class="button is-primary is-light">Primary</button>
+      <button class="button is-link is-light">Link</button>
+    </div>
+
+    <div class="buttons">
+      <button class="button is-info is-light">Info</button>
+      <button class="button is-success is-light">Success</button>
+      <button class="button is-warning is-light">Warning</button>
+      <button class="button is-danger is-light">Danger</button>
+    </div>
+  </div>
+  <div class="block" id="Sizes-Buttons">
+    <button class="button is-small">Small</button>
+    <button class="button">Default</button>
+    <button class="button is-normal">Normal</button>
+    <button class="button is-medium">Medium</button>
+    <button class="button is-large">Large</button>
+    <div class="buttons are-medium">
+      <button class="button">All</button>
+      <button class="button">Medium</button>
+      <button class="button">Size</button>
+    </div>
+    <div class="buttons are-small">
+      <button class="button">Small</button>
+      <button class="button">Small</button>
+      <button class="button">Small</button>
+      <button class="button is-normal">Normal</button>
+      <button class="button">Small</button>
+    </div>
+  </div>
+
+  <div class="block" id="Display-Buttons">
+    <button class="button is-small is-fullwidth">Small</button>
+    <button class="button is-fullwidth">Normal</button>
+    <button class="button is-medium is-fullwidth">Medium</button>
+    <button class="button is-large is-fullwidth">Large</button>
+    <input class="button is-medium is-fullwidth" type="submit" value="Submit input" />
+  </div>
+  <div class="block" id="Style-Buttons">
+    <button class="button is-outlined">Outlined</button>
+    <button class="button is-primary is-outlined">Outlined</button>
+    <button class="button is-link is-outlined">Outlined</button>
+    <button class="button is-info is-outlined">Outlined</button>
+    <button class="button is-success is-outlined">Outlined</button>
+    <button class="button is-danger is-outlined">Outlined</button>
+    <br />
+    <button class="button is-primary is-inverted">Inverted</button>
+    <button class="button is-link is-inverted">Inverted</button>
+    <button class="button is-info is-inverted">Inverted</button>
+    <button class="button is-success is-inverted">Inverted</button>
+    <button class="button is-danger is-inverted">Inverted</button>
+    <br />
+    <button class="button is-primary is-inverted is-outlined">
+      Invert Outlined
+    </button>
+    <button class="button is-link is-inverted is-outlined">
+      Invert Outlined
+    </button>
+    <button class="button is-info is-inverted is-outlined">
+      Invert Outlined
+    </button>
+    <button class="button is-success is-inverted is-outlined">
+      Invert Outlined
+    </button>
+    <button class="button is-danger is-inverted is-outlined">
+      Invert Outlined
+    </button>
+    <br />
+    <button class="button is-rounded">Rounded</button>
+    <button class="button is-primary is-rounded">Rounded</button>
+    <button class="button is-link is-rounded">Rounded</button>
+    <button class="button is-info is-rounded">Rounded</button>
+    <button class="button is-success is-rounded">Rounded</button>
+    <button class="button is-danger is-rounded">Rounded</button>
+  </div>
+  <div class="block" id="States-Buttons">
+    <button class="button">Normal</button>
+    <button class="button is-primary">Normal</button>
+    <button class="button is-link">Normal</button>
+    <button class="button is-info">Normal</button>
+    <button class="button is-success">Normal</button>
+    <button class="button is-warning">Normal</button>
+    <button class="button is-danger">Normal</button>
+    <br />
+    <button class="button is-hovered">Hover</button>
+    <button class="button is-primary is-hovered">Hover</button>
+    <button class="button is-link is-hovered">Hover</button>
+    <button class="button is-info is-hovered">Hover</button>
+    <button class="button is-success is-hovered">Hover</button>
+    <button class="button is-warning is-hovered">Hover</button>
+    <button class="button is-danger is-hovered">Hover</button>
+    <br />
+    <button class="button is-focused">Focus</button>
+    <button class="button is-primary is-focused">Focus</button>
+    <button class="button is-link is-focused">Focus</button>
+    <button class="button is-info is-focused">Focus</button>
+    <button class="button is-success is-focused">Focus</button>
+    <button class="button is-warning is-focused">Focus</button>
+    <button class="button is-danger is-focused">Focus</button>
+    <br />
+    <button class="button is-active">Active</button>
+    <button class="button is-primary is-active">Active</button>
+    <button class="button is-link is-active">Active</button>
+    <button class="button is-info is-active">Active</button>
+    <button class="button is-success is-active">Active</button>
+    <button class="button is-warning is-active">Active</button>
+    <button class="button is-danger is-active">Active</button>
+    <br />
+    <button class="button is-loading">Loading</button>
+    <button class="button is-info is-loading"></button>
+    <button class="button is-primary is-loading">Loading</button>
+    <button class="button is-link is-loading">Processing</button>
+    <button class="button is-info is-loading">Uploading</button>
+    <button class="button is-success is-loading">Downloading</button>
+    <button class="button is-warning is-loading is-left">Loading</button>
+    <button class="button is-danger is-loading">Loading</button>
+    <br />
+    <span class="button is-static">Static</span>
+    <br />
+    <button class="button" title="Disabled button" disabled>Disabled</button>
+    <button class="button is-primary" title="Disabled button" disabled>Disabled</button>
+    <button class="button is-link" title="Disabled button" disabled>Disabled</button>
+    <button class="button is-info" title="Disabled button" disabled>Disabled</button>
+    <button class="button is-success" title="Disabled button" disabled>Disabled</button>
+    <button class="button is-warning" title="Disabled button" disabled>Disabled</button>
+    <button class="button is-danger" title="Disabled button" disabled>Disabled</button>
+    <br />
+    <p class="buttons">
+      <button class="button">
+      </button>
+      <button class="button">
+        <span class="icon is-small">
+          <i class="fas fa-bold"></i>
+        </span>
+      </button>
+      <button class="button">
+        <span class="icon is-small">
+          <i class="fas fa-italic"></i>
+        </span>
+      </button>
+      <button class="button">
+        <span class="icon is-small">
+          <i class="fas fa-underline"></i>
+        </span>
+      </button>
+    </p>
+    <p class="buttons">
+      <button class="button">
+        <span class="icon">
+          <i class="fab fa-github"></i>
+        </span>
+        <span>GitHub</span>
+      </button>
+      <button class="button is-primary">
+        <span class="icon">
+          <i class="fab fa-twitter"></i>
+        </span>
+        <span>@jgthms</span>
+      </button>
+      <button class="button is-success">
+        <span class="icon is-small">
+          <i class="fas fa-check"></i>
+        </span>
+        <span>Save</span>
+      </button>
+      <button class="button is-danger is-outlined">
+        <span>Delete</span>
+        <span class="icon is-small">
+          <i class="fas fa-times"></i>
+        </span>
+      </button>
+    </p>
+    <p class="buttons">
+      <button class="button is-small">
+        <span class="icon is-small">
+          <i class="fab fa-github"></i>
+        </span>
+        <span>GitHub</span>
+      </button>
+      <button class="button">
+        <span class="icon">
+          <i class="fab fa-github"></i>
+        </span>
+        <span>GitHub</span>
+      </button>
+      <button class="button is-medium">
+        <span class="icon">
+          <i class="fab fa-github"></i>
+        </span>
+        <span>GitHub</span>
+      </button>
+      <button class="button is-large">
+        <span class="icon is-medium">
+          <i class="fab fa-github"></i>
+        </span>
+        <span>GitHub</span>
+      </button>
+    </p>
+    <p class="buttons">
+      <button class="button is-small">
+        <span class="icon is-small">
+          <i class="fas fa-heading"></i>
+        </span>
+      </button>
+    </p>
+    <p class="buttons">
+      <button class="button">
+        <span class="icon is-small">
+          <i class="fas fa-heading"></i>
+        </span>
+      </button>
+      <button class="button">
+        <span class="icon">
+          <i class="fas fa-heading fa-lg"></i>
+        </span>
+      </button>
+    </p>
+    <p class="buttons">
+      <button class="button is-medium">
+        <span class="icon is-small">
+          <i class="fas fa-heading"></i>
+        </span>
+      </button>
+      <button class="button is-medium">
+        <span class="icon">
+          <i class="fas fa-heading fa-lg"></i>
+        </span>
+      </button>
+      <button class="button is-medium">
+        <span class="icon is-medium">
+          <i class="fas fa-heading fa-2x"></i>
+        </span>
+      </button>
+    </p>
+    <p class="buttons">
+      <button class="button is-large">
+        <span class="icon is-small">
+          <i class="fas fa-heading"></i>
+        </span>
+      </button>
+      <button class="button is-large">
+        <span class="icon">
+          <i class="fas fa-heading fa-lg"></i>
+        </span>
+      </button>
+      <button class="button is-large">
+        <span class="icon is-medium">
+          <i class="fas fa-heading fa-2x"></i>
+        </span>
+      </button>
+    </p>
+  </div>
+</body>
+
+</html>

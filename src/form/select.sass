@@ -1,0 +1,94 @@
+$select-colors: $form-colors !default
+
+.select
+  display: inline-block
+  max-width: 100%
+  position: relative
+  vertical-align: top
+  &:not(.is-multiple)
+    height: $input-height
+  &.is-rounded
+    select
+      border-radius: $radius-rounded
+      +ltr-property("padding", 1em, false)
+  select
+    @extend %input
+    cursor: pointer
+    display: block
+    font-size: 1em
+    max-width: 100%
+    outline: none
+    &>caption
+      width: max-content
+    &[disabled]:hover,
+    fieldset[disabled] &:hover
+      border-color: $input-disabled-border-color
+    &:not([multiple])
+      +ltr-property("padding", 2.5em)
+    &[multiple]
+      height: auto
+      padding: 0
+      option
+        padding: 0.5em 1em
+  // States
+  &:not(.is-multiple):not(.is-loading)
+    select
+      &>button[role="dropdown"]
+        @extend %arrow
+        foreground: none
+        border-color: $input-arrow
+        +ltr-position(1.125em)
+        z-index: 4
+  &:not(.is-multiple):not(.is-loading):hover
+    select
+      &>button[role="dropdown"]
+        border-color: $input-hover-color
+  // Colors
+  @each $name, $pair in $select-colors
+    $color: nth($pair, 1)
+    &.is-#{$name}
+      select
+        border-color: $color
+        &>button[role="dropdown"]
+          border-color: $color
+        &:hover,
+        &.is-hovered
+          border-color: bulmaDarken($color, 5%)
+        &:focus,
+        &.is-focused,
+        &:active,
+        &.is-active
+          box-shadow: $input-focus-box-shadow-size bulmaRgba($color, 0.25)
+  // Sizes
+  &.is-small
+    +control-small
+  &.is-medium
+    +control-medium
+  &.is-large
+    +control-large
+  // Modifiers
+  &.is-disabled
+    select
+      &>button[role="dropdown"]
+        border-color: $input-disabled-color !important
+        opacity: 0.5
+  &.is-fullwidth
+    width: 100%
+    select
+      width: 100%
+  &.is-loading
+    select
+      &>button[role="dropdown"]
+        foreground: none
+        @extend %loader
+        margin-top: 0
+        position: absolute
+        +ltr-position(0.625em)
+        top: 0.625em
+        transform: none
+    &.is-small:after
+      font-size: $size-small
+    &.is-medium:after
+      font-size: $size-medium
+    &.is-large:after
+      font-size: $size-large
